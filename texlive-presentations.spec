@@ -1,3 +1,9 @@
+# revision 17172
+# category Package
+# catalog-ctan /info/examples/Presentations_de
+# catalog-date 2010-02-12 13:59:30 +0100
+# catalog-license lppl
+# catalog-version undef
 Name:		texlive-presentations
 Version:	20100212
 Release:	1
@@ -296,6 +302,7 @@ Dante-Edition series.
 %doc %{_texmfdistdir}/doc/latex/presentations/images/pdfscreen/tex.png
 %doc %{_texmfdistdir}/doc/latex/presentations/pd-demo-default.tex
 %doc %{_texmfdistdir}/doc/latex/presentations/pd-demo.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -306,3 +313,5 @@ Dante-Edition series.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
