@@ -16,8 +16,6 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/presentations.doc
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 This bundle contains all the examples, as source, eps and pdf,
@@ -302,7 +300,6 @@ Dante-Edition series.
 %doc %{_texmfdistdir}/doc/latex/presentations/images/pdfscreen/tex.png
 %doc %{_texmfdistdir}/doc/latex/presentations/pd-demo-default.tex
 %doc %{_texmfdistdir}/doc/latex/presentations/pd-demo.tex
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -313,5 +310,3 @@ Dante-Edition series.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
