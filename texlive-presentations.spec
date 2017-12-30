@@ -5,8 +5,8 @@
 # catalog-license lppl
 # catalog-version undef
 Name:		texlive-presentations
-Version:	20100212
-Release:	10
+Version:	20170421
+Release:	1
 Summary:	Examples from the book Presentationen mit LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/examples/Presentations_de
