@@ -9,7 +9,7 @@ Version:	20190228
 Release:	2
 Summary:	Examples from the book Presentationen mit LaTeX
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/info/examples/Presentations_de
+URL:		https://www.ctan.org/tex-archive/info/examples/Presentations_de
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/presentations.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/presentations.doc.tar.xz
